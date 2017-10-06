@@ -1,0 +1,863 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/**{
+  border: 1px solid red!important;
+}*/
+
+body,html{
+  margin: 0;
+  padding: 0;
+}
+a,a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family:'Playfair Display', serif;
+  background-color: #101008;
+  overflow-x: hidden;
+}
+
+.header{
+  color: white;
+  font-size: 20px;
+}
+
+#navigation{
+  position: sticky;
+  top: 0px;
+  z-index: 90;
+  background-color:#262626;
+
+}
+
+#navigation a {
+  display: inline-block;
+  /*margin: 13px;*/
+  padding-left: 20px;
+}
+
+/*end header*/
+
+
+
+
+/*projet*/
+
+#pays{
+  width: 100%;
+  border: solid 3px #36BF8D ;
+  position: relative;
+  height: 200px;
+
+}
+
+#salle{
+width: 100%;
+border: solid 3px #36BF8D ;
+position: relative;
+height: 200px;
+}
+
+#dojo{
+  width: 100%;
+  border: solid 3px #36BF8D ;
+  position: relative;
+  height: 200px;
+
+}
+
+#pfc{
+color: #36BF8D ;
+font-size: 20px;
+font-family: 'Playfair Display', sans-serif;
+margin-top: 10px;
+background-color: ;
+}
+
+#pictures{
+  display: flex;
+  justify-content: center ;
+  flex-direction: column;
+  margin-top: 80px;
+}
+@media (min-width:768px) {
+  #pictures{
+    flex-direction: row;
+  }
+}
+.projet{
+  margin: 0;
+  padding: 0;
+  /*width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;*/
+}
+
+.projet:hover img{
+  opacity: 0.5;
+}
+
+.salle::after{
+  content: "Voici un de met Projet que j'ai du effectuer pour entre chez Simplon.co...";
+}
+.dojo::after{
+  content: "Ceci est le premier jeu en javascript effectuer";
+}
+.pays::after{
+  content: "Et ca c'est un autre jeu des paires";
+}
+.projet:after{
+  font-size: 2.1vw;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  color:#36BF8D;
+  opacity: 0;
+  transition: 0.7s;
+  font-family: 'Anton', sans-serif;
+}
+.projet:hover::after{
+opacity: 1;
+}
+
+
+/*end projet*/
+
+
+.menu .active {
+color: #36BF8D ;
+}
+
+.menu a{
+  /*margin: 30px;*/
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+}
+
+
+.menu{
+  display: block;
+  text-align: center;
+  /*height: 80px;*/
+  color: white;
+}
+
+.menu a:hover{
+  color: #36BF8D;
+
+}
+
+/*end menu*/
+
+
+hr{
+  text-shadow: 3px 3px 3px black;
+}
+
+.citation{
+padding:20px;
+margin-top: 50px;
+color: white;
+}
+
+.citation h2{
+  margin-top: 70px;
+  margin-right: 70px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+
+}
+
+.citation h5{
+  margin-right: 70px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+
+}
+
+.citation h6{
+  margin-top: 15px;
+  font-size: 17px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+
+}
+
+/*profil*/
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+
+}
+
+
+h2{
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+
+}
+
+h5{
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+
+}
+
+h4{
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.container h5{
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.titre{
+  color: #36BF8D;
+}
+
+
+#martin{
+  margin-top: 15px;
+  font-size: 17px;
+  font-family: 'Playfair Display', sans-serif;
+ }
+#fig {
+  margin: 0 auto;
+}
+
+#enter{
+  margin-top: 80px;
+  border: solid 8px #36BF8D ;
+  width : 100% ;
+  /*margin-left: 60px;*/
+}
+@media screen and (max-width: 675px) {
+   #enter{
+
+  }
+}
+
+#profil{
+  padding-top: 75px;
+  width: 100%;
+}
+
+
+/*end profil*/
+
+.projet h2{
+  text-align: center;
+  margin-bottom: 55px;
+  margin-left: 545px;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+
+
+/*footer*/
+
+.footer{
+  height: 100px;
+  background-color:#262626;
+  color:#36BF8D;
+  font-family: 'Domine', sans-serif;
+}
+
+
+
+
+#me-contact{
+  color:#36BF8D;
+  font-family: 'lobster', sans-serif;
+}
+#me-contact:hover{
+  color: white;
+  font-family: 'lobster', sans-serif;
+  transition: 0.4s;
+}
+#fin{
+  text-align: center;
+  margin:auto;
+  font-family: 'lobster', sans-serif;
+  font-size: 11px;
+}
+
+
+#twitter{
+  margin-left: 127px;
+  margin-right: 10px;
+  color: #36BF8D;
+  transition: 0.4s;
+}
+#twitter:hover{
+  color:white ;
+}
+
+
+#linkedin{
+  margin-right: 10px;
+  color: #36BF8D;
+  transition: 0.4s;
+}
+#linkedin:hover{
+  color:white ;
+}
+
+
+
+#github:hover{
+color: white;
+}
+#github{
+  color: #36BF8D;
+  transition: 1s;
+}
+
+
+#githubModal{
+  color: #36BF8D;
+  transition: 1s;
+  display: flex;
+  justify-content: space-around;
+}
+#githubModal:hover{
+  color:white ;
+}
+
+
+.mail{
+  color:#36BF8D;
+  transition: 0.4s;
+  margin-left: 10px;
+
+}
+
+/*page-accueil*/
+
+
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 750px;
+    padding-top: 80px;
+}
+
+
+ h6{
+ font-size: 30px;
+ font-family:'Lobster', sans-serif;
+ margin-top: 90px;
+}
+
+
+.page1{
+  text-align: center;
+
+}
+.page1 h1{
+  margin-top: 5px;
+  font-family: 'Anton', sans-serif;
+}
+
+.page1 p{
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  padding-top: 30px;
+}
+
+.page1 button {
+  margin-top: 30px;
+}
+
+.btn-custom{
+color: #fff;
+background-color: #36BF8D;
+margin-top: 10px;
+font-family: 'Lobster', sans-serif;
+}
+
+.btn-custom:hover{
+background-color: #8C8B88 ;
+
+}
+/*end page accueil*/
+
+/*contact bemoji*/
+
+#cont{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+#demande-form{
+  width: 100%;
+  justify-content: center;
+}
+#contact{
+  max-width: 350px;
+  margin: 50px auto;
+}
+
+.img-moi{
+  width: 30%;
+}
+#moi{
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 620px) {
+  #cont{
+   flex-flow: row nowrap;
+  }
+
+  #demande-form{
+    width: 50%;
+    justify-content: center;
+  }
+  .img-moi{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+  }
+  #moi{
+    width: 45%;
+
+  }
+
+}
+
+
+
+
+
+/*formulaire*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:'Lobster', sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:black;
+
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+
+}
+#demande-form{
+  margin-right: 242px;
+  margin-top: 100px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],  #contact textarea, #contact button[type="submit"] {
+  font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+ }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+}
+
+#contact h3 {
+	color: black;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+  color: black;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+	width:100%;
+	border:3px solid #CCC;
+	background:white;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:3px solid #36BF8D;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#36BF8D;
+	color:black;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:grey;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:black;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+/*end formulaire*/
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mon Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id="acceuil" class="container-fluid bg-overlay row">
+        <div class="offset-xs-1 offset-md-2 offset-lg-3 col-xs-10 col-md-8 col-lg-6 page1 ">
+            <h6> Je suis </h6>
+            <h1> Développeur Web Junior et Passionné </h1>
+            <p> { Si vous voulez me découvrir cliquer } </p>
+            <button type="button" class="btn btn-custom btn-lg"><a href="#profil">Click ici</a></button>
+        </div>
+    </div>
+
+    <!-- nav -->
+    <header id="navigation" class="container-fluid header">
+
+        <nav class="menu">
+            <a href="#index">Accueil</a>
+            <a href="#profil">Profil</a>
+            <a href="#projet">Projet</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+
+    </header>
+
+
+    <section id="profil" class="container-fluid banniere">
+        <div class="row">
+            <div class=" col-lg-12 col-md-12 col-12 text-center banniere  d-flex justify-content-around">
+                <article class="col-lg-12 col-md-12 col-10 ">
+                    <h1> Bonjour Je suis Youssef </h1>
+                    <h2> { Développeur Web Junior } </h2>
+                    <h5>Je me suis dirige vers le développement web suite à une reconversion professionelle <br>
+                        J'ai effectuer une formation intensif et diplômante en développement Web, Je suis passionné de nouvelle technologie <br>
+                        Je serai apporte ma touche de <span class="titre">créativite et de dynamisme</span> à tout vos projet professionelle ou personnel<br>
+                        <!-- Apres un parcours professionnel atyphique j'ai découvers le <span class="titre">développement web</span> grâce à une reconversion professionel. Dans l'infographie devant effectuer un stage de decouverte ayant eu aucune opportunite de stage j'ai eu l'occasion d'entre en stage dans une start-up
+                        <span class="titre">lilloise</span> qui ma fait découvrire ce que était le métier de <span class="titre">développeur web</span>  et j'ai immediatement accroché et je suis devenue passionne est j'ai voulu en faire mon métier.  --></h5>
+                    <figure id="fig" class="col-12 col-lg-10">
+                        <img id="enter" src="img/work1.jpg" alt="working" class="">
+                    </figure>
+                </article>
+            </div>
+            <div class="citation col-12 d-flex justify-content-around flex-column">
+                <h4>"Croyez en vos rêves et ils se réaliseront peut-être. Croyez en vous et ils se réaliseront sûrement".</h4>
+                <h6 id="martin" class="text-center "> <span class="titre">"Martin Luther King"</span></h6>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid" id="projet">
+        <div class="profil">
+
+            <h2> { Mes Projets } </h2>
+        </div>
+
+        <div id="pictures" class="">
+            <figure class="salle projet col-lg-3 col-md-4 col-12" data-toggle="modal" data-target=".test">
+              <img id="salle" src="img/ban2.jpeg" alt="">
+            </figure>
+
+            <figure class="dojo projet col-lg-3 col-md-4 col-12" data-toggle="modal" data-target=".test1">
+                <img  id="dojo" src="img/dojo.jpeg" alt="">
+            </figure>
+
+            <figure class="pays projet col-lg-3 col-md-4 col-12" data-toggle="modal" data-target=".bd-example-modal-md">
+                <img id="pays" src="img/pays2_fotor.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+
+
+    <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <img id="pays" src="img/pays2_fotor.jpg" alt="">
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+              <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-md test1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <img id="dojo" src="img/dojo.jpeg" alt="">
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a class="px-1" href="https://github.com/YoussM/pierre-feuille-ciseau"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+              <!-- <a class="px-1" href="https://youssm.github.io/pierre-feuille-ciseau/ "><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a> -->
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-md test" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <img id="salle" src="img/ban2.jpeg" alt="">
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a class="px-1" href="https://github.com/YoussM"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+              <!-- <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a> -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <section id="cont" class="row d-flex justify-content-center">
+
+        <div class="img-moi ">
+            <img id="moi" src="img/youyou.png" alt="">
+        </div>
+
+        <div class="" id="demande-form">
+            <form id="contact" action="mailto:youssef.mercier@hotmail.fr?subject=Portfolio" method="post">
+                <h3> Pour Me Contacter </h3>
+                <fieldset>
+                    <input placeholder="Votre Nom" type="text" tabindex="1" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Votre Adresse Email " type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Votre Numéro de téléphone" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Votre Message...." tabindex="4" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyé</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="footer1">
+                <p id="fin"> © Copyright 2017 Générer mentions légales | Design By Youss.. | <a href="#contact" id="me-contact"> Me Contacter </a></p>
+                <a href="https://twitter.com/Youss_M"><i id="twitter" class="fa fa-twitter-square fa-3x" aria-hidden="true"></a></i>
+                <a href="https://www.linkedin.com/in/youssef-mercier-27b175140/"><i id="linkedin" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/YoussM"><i id="github" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                <a class="fa fa-file-text fa-3x mail" aria-hidden="true" href="WebPage/CV.pdf"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
