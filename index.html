@@ -31,8 +31,8 @@
         <div class="offset-xs-1 offset-md-2 offset-lg-3 col-xs-10 col-md-8 col-lg-6 page1 ">
             <h6> Je suis </h6>
             <h1> Développeur Web Junior et Passionné </h1>
-            <p> { Si vous voulez me découvrir cliquer } </p>
-            <button type="button" class="btn btn-custom btn-lg"><a href="#profil">Click ici</a></button>
+            <p> { Si vous voulez me découvrir cliquez } </p>
+            <a href="#profil"><button type="button" class="btn btn-custom btn-lg">Cliquez ici</button></a>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
                     <h2> { Développeur Web Junior } </h2>
                     <h5>Je me suis dirige vers le développement web suite à une reconversion professionelle <br>
                         J'ai effectuer une formation intensif et diplômante en développement Web, Je suis passionné de nouvelle technologie <br>
-                        Je serai apporte ma touche de <span class="titre">créativite et de dynamisme</span> à tout vos projet professionelle ou personnel<br>
+                        Je serai apporte ma touche de <span class="titre">créativite et de dynamisme</span> à tout vos projet professionelle ou personnel.<br>
                         <!-- Apres un parcours professionnel atyphique j'ai découvers le <span class="titre">développement web</span> grâce à une reconversion professionel. Dans l'infographie devant effectuer un stage de decouverte ayant eu aucune opportunite de stage j'ai eu l'occasion d'entre en stage dans une start-up
                         <span class="titre">lilloise</span> qui ma fait découvrire ce que était le métier de <span class="titre">développeur web</span>  et j'ai immediatement accroché et je suis devenue passionne est j'ai voulu en faire mon métier.  --></h5>
                     <figure id="fig" class="col-12 col-lg-10">
@@ -76,72 +76,158 @@
 
 
     <section class="container-fluid" id="projet">
-        <div class="profil">
 
+        <div class="profil">
             <h2> { Mes Projets } </h2>
         </div>
 
-        <div id="pictures" class="">
-            <figure class="salle projet col-lg-3 col-md-4 col-12" data-toggle="modal" data-target=".test">
-              <img id="salle" src="img/ban2.jpeg" alt="">
+        <div class="row" id="pictures">
+
+            <figure class="blog salle col-12 col-md-4 " data-toggle="modal" data-target=".test">
+              <img  src="img/ban2.jpeg" alt="">
             </figure>
 
-            <figure class="dojo projet col-lg-3 col-md-4 col-12" data-toggle="modal" data-target=".test1">
-                <img  id="dojo" src="img/dojo.jpeg" alt="">
+            <div class="modal fade bd-example-modal-md test" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <img id="salle" src="img/ban2.jpeg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <a class="px-1" href="https://github.com/YoussM"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                      <!-- <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <figure class="blog dojo col-12 col-md-4" data-toggle="modal" data-target=".test1">
+                <img  src="img/dojo.jpeg" alt="">
             </figure>
 
-            <figure class="pays projet col-lg-3 col-md-4 col-12" data-toggle="modal" data-target=".bd-example-modal-md">
-                <img id="pays" src="img/pays2_fotor.jpg" alt="">
+            <div class="modal fade bd-example-modal-md test1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <img id="dojo" src="img/dojo.jpeg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <a class="px-1" href="https://github.com/YoussM/pierre-feuille-ciseau"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                      <!-- <a class="px-1" href="https://youssm.github.io/pierre-feuille-ciseau/ "><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <figure class="blog pays col-12 col-md-4" data-toggle="modal" data-target=".test2">
+                <img src="img/pays2_fotor.jpg" alt="">
             </figure>
-        </div>
-    </section>
 
-
-    <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <img id="pays" src="img/pays2_fotor.jpg" alt="">
+            <div id="modal"class="modal fade test2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <img id="pays" src="img/pays2_fotor.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                      <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="d-flex justify-content-center">
-              <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-              <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
-            </div>
+          <figure class="blog col-12 col-md-4" data-toggle="modal" data-target=".test3">
+              <img  src="img/exoMiniTchat.png" alt="">
+          </figure>
 
+          <div id="modal"class="modal fade test3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                      <img id="pays" src="img/exoMiniTchat.png" alt="">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                    <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+
+          <figure class="blog col-12 col-md-4" data-toggle="modal" data-target=".test4">
+              <img  src="img/exoToDoList.png" alt="">
+          </figure>
+          <div id="modal"class="modal fade test4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                      <img id="pays" src="img/exoToDoList.png" alt="">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                    <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+
+          <figure class="blog col-12 col-md-4" data-toggle="modal" data-target=".test5">
+              <img src="img/exoUser.png" alt="">
+          </figure>
+          <div id="modal"class="modal fade test5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                      <img id="pays" src="img/exoUser.png" alt="">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                    <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+
+        <figure class="blog col-12 col-md-4" data-toggle="modal" data-target=".test6">
+            <img  src="img/exoBlogSql.png" alt="">
+        </figure>
+        <div id="modal"class="modal fade test6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <img id="pays" src="img/exoBlogSql.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                  <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
         </div>
+
+        <figure class="blog col-12 col-md-4" data-toggle="modal" data-target=".test7">
+          <img  src="img/exoBanque.png" alt="">
+        </figure>
+        <div id="modal"class="modal fade test7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <img id="pays" src="img/exoBanque.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                  <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+       <figure class="blog banque col-12 col-md-4" data-toggle="modal" data-target=".test8">
+          <img  src="img/exoAjax.png" alt="">
+       </figure>
+       <div id="modal"class="modal fade test8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-md">
+               <div class="modal-content">
+                   <img id="pays" src="img/exoAjax.png" alt="">
+               </div>
+               <div class="d-flex justify-content-center">
+                 <a class="px-1" href="https://github.com/YoussM/jeu--des-paires"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                 <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a>
+               </div>
+           </div>
+       </div>
     </div>
 
-    <div class="modal fade bd-example-modal-md test1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <img id="dojo" src="img/dojo.jpeg" alt="">
-            </div>
-
-            <div class="d-flex justify-content-center">
-              <a class="px-1" href="https://github.com/YoussM/pierre-feuille-ciseau"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-              <!-- <a class="px-1" href="https://youssm.github.io/pierre-feuille-ciseau/ "><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a> -->
-            </div>
-
-
-        </div>
-    </div>
-
-    <div class="modal fade bd-example-modal-md test" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <img id="salle" src="img/ban2.jpeg" alt="">
-            </div>
-
-            <div class="d-flex justify-content-center">
-              <a class="px-1" href="https://github.com/YoussM"><i id="githubModal" class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-              <!-- <a class="px-1" href="https://youssm.github.io/jeu--des-paires/"><i id="githubModal" class="fa fa-chrome fa-3x" aria-hidden="true"></i></a> -->
-            </div>
-
-        </div>
-    </div>
+</section>
 
 
 
+<!-- formulaire de contact -->
 
     <section id="cont" class="row d-flex justify-content-center">
 
